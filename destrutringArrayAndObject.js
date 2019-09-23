@@ -37,3 +37,18 @@ let [a='Default', b, c, d='Default'] = numArray;
 // It can be used to swap also
 
 let [a,b] = [b,a]
+
+
+// --------------------------------------------------------------------------------------------------------------------------------------------
+
+// Uses of Destructuring in objects
+
+let personObject = { name: 'Sandeep', lastname: 'Kumar', address: 'Pune' };
+
+let [name, lastname] = personObject;
+
+console.log('Name: ' + name + ' LastName: ' + lastname);
+
+// Here tricky thing is you can not skip and expect to work like array
+
+let [name, , lastname] = personObject;  // this will throw an error here, Syntax error: Unexpected token ,
