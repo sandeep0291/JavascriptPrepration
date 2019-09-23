@@ -24,6 +24,8 @@ console.log(person);
 var animal = [10,20,30,40,70];
 var animalCopy = [...animal];
 animalCopy.push(80);
+// elements can be push inside array like this also
+//var animalCopy = [...animal, 100];
 
 console.log(animalCopy);
 /*
