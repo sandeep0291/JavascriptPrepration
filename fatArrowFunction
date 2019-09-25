@@ -1,0 +1,43 @@
+// FAT arrow function
+
+
+// 1.
+// syntax of fat arrow function
+
+var hello = (args) => {
+  console.log("Fat arrow function");
+}
+
+hello();
+
+
+// 2.
+// Second way of using fat arrow function
+// when we have only ONE arg then we can omit brackets like below
+
+var helloWithOneArgument = name => {
+  
+  console.log("Hello: " + name);
+};
+
+helloWithOneArgument("Sandeep");
+
+
+// 3.
+// Even we can remove function defination curly braces {} if we have just one line there
+
+var helloWithOneLineDefintation = name => console.log("Hello: " + name);
+helloWithOneLineDefintation("Sandeep");
+
+// 4.
+// If there is only one line with return then no need to even type return also
+// see below a+b without any return infront of it
+// but remember you can not use this thing like this { a+b; } even if you have 
+// single line inside braces {}
+
+var addTwoNumbers = (a,b) => a+b;
+console.log( addTwoNumbers(2,4) );
+
+
+
+
