@@ -43,3 +43,28 @@ let FourthVar = 90;
 //console.log("firstVar: " + firstVar + "FourthVar: " + FourthVar);
 // will get error Uncaught ReferenceError: Cannot access 'FourthVar' before initialization
 
+
+// ----------------------------------------------------------------------------------------------------------------------------------------
+
+// Const keyword
+
+// As the name suggest constant, it can not be changed once assigned;
+
+const firstName = 'Sandeep';
+console.log(firstName);
+//firstName = 'Mahesh'; // here it will throw error "TypeError: Assignment to constant variable.
+
+
+
+// But this is not the case with object/array
+
+const person = { firstName: 'Sandeep', lastName: 'Kumar' };
+console.log(person);
+person.firstName = 'Mahesh';
+console.log(person);
+
+// as array and object are reference type data type, const only store the reference value not the assigned value
+// and reference value are not changed so  these can be changed in same manner as with var
+
+
+
