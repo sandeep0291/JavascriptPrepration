@@ -21,3 +21,21 @@ console.log(iterator.next());
 
 // To know this iteration has reached to end we have to check
 // done: true , can not rely on value: undefined because undefined can be a empty value too
+
+
+//Generators
+//Generators are functions which don’t necessarily run to the end upon execution.
+//Instead, upon each call they yield a value. A generator is created by adding
+//an asterisk in front of the function name.
+function *select() {
+ yield 'House Data';
+ yield 'Person Data';
+}
+// When executing a function they don’t return a value immediately, instead
+// an iterator is returned. This iterator may then be used to access the
+// returned values step by step.
+let iterator = select();
+console.log(iterator.next()); // prints House Data
+console.log(iterator.next()); // prints Person Data
+console.log(iterator.next()); // prints undefined
+//Of course you may also pass arguments to generators and use them in the function body.
