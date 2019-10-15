@@ -60,6 +60,11 @@ console.log(mergeThem); // {a: 10, b: 20}
 
 
 
+// ***********  Answer of 4. What is object.assign() *******************  @Sandeep Kumar
+
+// This method is used to copy/merge objects as explained above, Please note this only does shallow copy as mentioned above
+// For more info: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign
+
 
 
 // OOPS *********************
