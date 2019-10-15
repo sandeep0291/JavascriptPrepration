@@ -37,14 +37,26 @@ var xCopy = JSON.parse(JSON.stringify(x));
 
 
 
+// ***********  Answer of 3. How to merge objects *******************  @Sandeep Kumar
 
+// merging objects can be achieved by Object.assign method only
 
+var first = { a:1 };
+var second = { b:1 };
+var third = { c:1 };
 
+var mergeThem = Object.assign(first,second,third);
+console.log(mergeThem);  // { a:1, b:2, c:3 }
+// remember this will change first object also i.e target here
+// if you don't want this, then you can pass empty objects in first param like below
+var mergeThem = Object.assign({}, first, second, third);
 
-
-
-
-
+// also remember if an object has same key then it's value will be altered by latter one
+// here what I mean
+var first = { a: 1, b:2};
+var second= { a:10, b:20 };
+var mergeThem = Object.assign(first,second);
+console.log(mergeThem); // {a: 10, b: 20}
 
 
 
