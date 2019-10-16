@@ -99,6 +99,11 @@ var person = { age: 30 }
 Object.defineProperty(person, 'name', { value: 'Joshua', enumerable: false }); // now name will not be same when iterate in for loop/For Each
 
 
+//  ***********  Answer of 7.  What is the difference b/w Object.assign and Object.create *******************  @Sandeep Kumar
+
+// Object.create is used to create new object with a existing object as the prototype of the newly created object.
+// but assign method creates a copy / clone of the existing object, Object.create() is used in inheritance implementation 
+
 
 // OOPS *********************
 // 1. What is __proto__
