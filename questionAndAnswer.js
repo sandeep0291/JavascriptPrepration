@@ -128,7 +128,7 @@ Object.defineProperty(person, 'name', { value: 'Joshua', enumerable: false }); /
 // *************************************************************************************************************************
 
 
-// ***********  Answer of 7. 1. What is __proto_ *******************  @Sandeep Kumar
+// ***********  Answer of  1. What is __proto_ *******************  @Sandeep Kumar
 
 // __proto__ is the actual object that is used to lookup prototype chain methods, every object have __proto__ which points
 // to it's parent prototype 
@@ -151,6 +151,11 @@ var a = new Person();
 // those property
 
 
+// ***********  Answer of  2. Difference b/w prototype and __proto___ *******************  @Sandeep Kumar
+
+// prototype are attached to function not Object, with __proto__ internally an object instance access prototype methods or properties
+//  It is used to build __proto__ when the function happens to be used as a constructor with the new keyword
+// for more refer here: https://stackoverflow.com/questions/9959727/proto-vs-prototype-in-javascript
 
 
 
