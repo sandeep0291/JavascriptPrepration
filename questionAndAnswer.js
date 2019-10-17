@@ -7,6 +7,24 @@
 // 6. What is enumerable property means
 // 7. What is the difference b/w Object.assign and Object.create
 
+// OOPS *********************
+// 1. What is __proto__
+// 2. Difference b/w prototype and __proto__
+// 3. What is a function constructor
+// 5. Ways to achieve inheritance in javascript
+
+// Random *******************
+// 1. Currying
+// 2. Memonization
+// 3. Functional Programming
+// 4. Higher Order Functions
+// 5. Compose and pipe
+
+
+// *************************************************************************************************************************
+// *********************************************Objects Answers ************************************************************
+// *************************************************************************************************************************
+
 
 // ***********  Answer of 1. How to clone Objects *******************  @Sandeep Kumar
 var aObj = { a: 10, b: 10 };
@@ -105,17 +123,7 @@ Object.defineProperty(person, 'name', { value: 'Joshua', enumerable: false }); /
 // but assign method creates a copy / clone of the existing object, Object.create() is used in inheritance implementation 
 
 
-// OOPS *********************
-// 1. What is __proto__
-// 2. Difference b/w prototype and __proto__
-// 3. What is a function constructor
-// 4. What is Object.create()
-// 5. Ways to achieve inheritance in javascript
+// *************************************************************************************************************************
+// *********************************************OOPS Answers ***************************************************************
+// *************************************************************************************************************************
 
-
-// Random *******************
-// 1. Currying
-// 2. Memonization
-// 3. Functional Programming
-// 4. Higher Order Functions
-// 5. Compose and pipe
