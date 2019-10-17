@@ -12,6 +12,10 @@
 // 2. Difference b/w prototype and __proto__
 // 3. What is a function constructor
 // 5. Ways to achieve inheritance in javascript
+// 6. Singleton Pattern
+// 7. PubSub Pattern
+// 8. Modular Pattern
+// 9. Prototype Pattern
 
 // Random *******************
 // 1. Currying
