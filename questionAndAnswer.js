@@ -127,3 +127,33 @@ Object.defineProperty(person, 'name', { value: 'Joshua', enumerable: false }); /
 // *********************************************OOPS Answers ***************************************************************
 // *************************************************************************************************************************
 
+
+// ***********  Answer of 7. 1. What is __proto_ *******************  @Sandeep Kumar
+
+// __proto__ is the actual object that is used to lookup prototype chain methods, every object have __proto__ which points
+// to it's parent prototype 
+
+function Person(){
+    this.name = 'Sandeep';
+}
+
+Person.prototype.age = 12;
+
+var a = new Person();
+
+// now a can access a.age with __proto__ internally pointing to Person prototype
+// check this on console a.__proto__  this will show  {age: 12, constructor: ƒ}
+// a.__proto__.__proto__ will give you actual Object()
+// a.__proto__.__proto__.__proto__  this will give you null as Object constructor doesn't point to anything
+
+// __proto__ is also attached to a Function contructor which points to function native code ƒ () { [native code] }
+// with this it access length call apply bind function, as you can see function constructor above itself don't have 
+// those property
+
+
+
+
+
+
+
+
