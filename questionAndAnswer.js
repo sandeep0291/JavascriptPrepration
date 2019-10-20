@@ -10,7 +10,7 @@
 // OOPS *********************
 // 1. What is __proto__
 // 2. Difference b/w prototype and __proto__
-// 3. What is a function constructor
+// 3. What is a constructor function and factory function
 // 5. Ways to achieve inheritance in javascript
 // 6. Singleton Pattern
 // 7. PubSub Pattern
@@ -162,7 +162,51 @@ var a = new Person();
 // for more refer here: https://stackoverflow.com/questions/9959727/proto-vs-prototype-in-javascript
 
 
+// ***********  Answer of  3. What is a constructor function and factory function *******************  @Sandeep Kumar
+
+// constructor function are used to create new objects with 'new' keyword called function
+
+function Person(name, lastName){
+   this.name = name;
+   this.lastName = lastName;
+}
+
+Person.prototype.fullName = function(){
+  return this.name + ' ' + this.lastName;
+}
+
+var a = new Person('Sandeep', 'Kumar');
+
+a.fullName(); // Sandeep Kumar
 
 
+// Factory function are also used to create new objects without using new keyword
 
+function helloWorld(){
+  return {
+    a: 'Hello',
+    b: 'World',
+    print: function(){
+         return this.a + ' ' + this.b;
+    }
+  }
+}
+
+var b = helloWorld();
+b.print();
+
+
+// here to improve efficiency print function can be written
+
+var common = {
+    print: function(){
+         return this.a + ' ' + this.b;
+    }
+}
+
+function helloWorld(){
+  var hey = Object.create(common); // this creates prototype 
+}
+var c = helloWorld();
+c.print();
 
