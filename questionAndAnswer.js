@@ -17,12 +17,21 @@
 // 8. Modular Pattern
 // 9. Prototype Pattern
 
+
+// Core Fundamental Question:
+// 1. What is Hoisting.
+// 2. What is a Closure.
+// 3. Prototype Chaining
+
+
 // Random *******************
 // 1. Currying
 // 2. Memonization
 // 3. Functional Programming
 // 4. Higher Order Functions
 // 5. Compose and pipe
+
+
 
 
 // *************************************************************************************************************************
