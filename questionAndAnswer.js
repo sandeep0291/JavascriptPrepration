@@ -22,6 +22,7 @@
 // 1. What is Hoisting.
 // 2. What is a Closure.
 // 3. Prototype Chaining
+// 4. What is Lexical Scope
 
 
 // Random *******************
