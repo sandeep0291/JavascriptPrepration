@@ -7,6 +7,7 @@
 // 6. What is enumerable property means
 // 7. What is the difference b/w Object.assign and Object.create
 
+
 // OOPS *********************
 // 1. What is __proto__
 // 2. Difference b/w prototype and __proto__
