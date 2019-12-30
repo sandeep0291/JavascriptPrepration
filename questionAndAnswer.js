@@ -261,3 +261,32 @@ console.log(charlie.constructor)
 
 
 
+// *************************************************************************************************************************
+// ********************************************* Core Fundamental Questions ************************************************
+// *************************************************************************************************************************
+
+
+// Q4. What is Lexical Scope
+
+// Lexical means static, where the code is written
+
+var scope = "I am global";
+function whatismyscope(){
+   var scope = "I am just a local";
+   function func() {return scope;}
+   return func;
+}
+
+whatismyscope()();
+//The above code will return "I am just a local". It will not return "I am a global".
+//Because the function func() counts where is was originally defined which is under the scope of function whatismyscope.
+//It will not bother from whatever it is being called(the global scope/from within another function even), that's why global scope value I am global will not be printed.
+//This is called lexical scoping where "functions are executed using the scope chain that was in effect when they were defined" - according to JavaScript Definition Guide.
+//Lexical scope is a very very powerful concept.
+
+// for Ref: https://stackoverflow.com/questions/1047454/what-is-lexical-scope
+
+
+
+
+
