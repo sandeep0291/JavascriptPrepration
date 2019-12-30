@@ -134,3 +134,19 @@ const charlie = new Dog('Charlie', 10, 'Goldendoodle')
 console.log(charlie.constructor)
 
 // Please refer to this link also for more details: https://tylermcginnis.com/javascript-inheritance-and-the-prototype-chain/
+
+
+
+// Q5. What is localStorage and sessionStorgae
+
+// Web storage objects localStorage and sessionStorage allow to save key/value pairs in the browser.
+
+//What’s interesting about them is that the data survives a page refresh (for sessionStorage) and 
+// even a full browser restart (for localStorage)
+
+setItem(key, value) – store key/value pair.
+getItem(key) – get the value by key.
+removeItem(key) – remove the key with its value.
+clear() – delete everything.
+key(index) – get the key on a given position.
+length – the number of stored items.
