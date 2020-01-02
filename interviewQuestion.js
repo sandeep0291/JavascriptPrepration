@@ -1,3 +1,49 @@
+// Regular array methods used Clarity
+
+// ************************************************  SLICE METHOD ********************************************************
+
+// It doesn't mutate original array, returns a new array
+// It takes two argument, 1st from where to start index, 2nd where to end if not set it will consider till end of elemen
+
+// The slice() method returns the selected elements in an array, as a new array object.
+//The slice() method selects the elements starting at the given start argument, and ends at, but does not include, the given end argument.
+
+var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+var citrus = fruits.slice(1, 3);
+
+
+console.log(citrus);  // [Orange,Lemon] // remember end th element is not included
+console.log(fruits); //   ["Banana", "Orange", "Lemon", "Apple", "Mango"] will remains the same
+
+
+
+// ************************************************  SPLICE METHOD ********************************************************
+
+// It takes 3 arguments, 1st Index where to start, 2nd no of element to be added/deleted Optional if not given will take till last th element
+// 3rd..nth  arguments values to be added in the array
+
+// Remember it MUTATE'S Original Array
+
+var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+var citrus = fruits.splice(1, 3);
+console.log(citrus);  // ["Orange","Lemon", "Apple"] // remember end th element is not included
+console.log(fruits); //   ["Banana", "Mango"] Remember it mutates original array
+
+
+// How to add elements here
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+var checkSpread = ["X","Y"];
+var citrus = fruits.splice(2, 1, ...checkSpread); // one item removed here and 2 items will be inserted with spread operator
+
+
+console.log(fruits); // Banana,Orange,X,Y,Mango
+console.log("//");
+console.log(citrus); // Apple
+
+
+
+
+
 // Q1. Function to remove two adjacent duplicate characters from a string. 
 // let str = 'abbbbaca'; // output: 'ca'
 
