@@ -41,6 +41,27 @@ console.log("//");
 console.log(citrus); // Apple
 
 
+// ************************************************  CONCAT METHOD ********************************************************
+
+
+var hege = ["Cecilie", "Lone"];
+var stale = ["Emil", "Tobias", "Linus"];
+var children = hege.concat(stale);
+
+// It returns a new array and doesn't mutate the original array
+// array1.concat(array2, array3, ..., arrayX) can take n number of arguments
+
+
+// ************************************************  JOIN METHOD ********************************************************
+
+
+var hege = ["Cecilie", "Lone"];
+var result = hege.join(); // Cecilie, Lone
+// By default comma is jused as the sperator in join argument
+// Join doesn't Mutate the original array
+
+
+
 
 
 
