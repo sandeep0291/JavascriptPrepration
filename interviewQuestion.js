@@ -26,7 +26,7 @@ console.log(fruits); //   ["Banana", "Orange", "Lemon", "Apple", "Mango"] will r
 
 var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
 var citrus = fruits.splice(1, 3);
-console.log(citrus);  // ["Orange","Lemon", "Apple"] // remember end th element is not included
+console.log(citrus);  // ["Orange","Lemon", "Apple"] //
 console.log(fruits); //   ["Banana", "Mango"] Remember it mutates original array
 
 
