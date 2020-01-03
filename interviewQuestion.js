@@ -283,3 +283,29 @@ function validAnagram(first, second) {
 // {a: 0, n: 0, g: 0, r: 0, m: 0,s:1}
 validAnagram('anagrams', 'nagaramm')
 
+
+// Q7. Fibnacci gernator
+
+function fibnacci(){
+  var last_one = 0;
+  var secondLast = 1;
+
+  return function(){
+
+      var result =  last_one+secondLast;
+      secondLast = last_one;
+      last_one = result;
+      console.log(result);
+      return result;
+      
+  }
+
+}
+
+var a = fibnacci();
+a();
+a();
+a();
+a();
+a();
+a();
