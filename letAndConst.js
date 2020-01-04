@@ -55,6 +55,15 @@ console.log(firstName);
 //firstName = 'Mahesh'; // here it will throw error "TypeError: Assignment to constant variable.
 
 
+// As object and array are reference type, so when you change reference by assigning it will throw error:
+
+var a;
+
+person = a;
+
+console.log(person);
+
+//Uncaught TypeError: Assignment to constant variable.
 
 // But this is not the case with object/array
 
@@ -65,6 +74,4 @@ console.log(person);
 
 // as array and object are reference type data type, const only store the reference value not the assigned value
 // and reference value are not changed so  these can be changed in same manner as with var
-
-
 
