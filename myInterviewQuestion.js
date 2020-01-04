@@ -10,6 +10,7 @@ Q4. What is a Service Worker
 Q5. What is a Closure.
 Q6. How to hide an object property
 Q7. What is the difference between application cache and browser cache.
+Q8. How to achieve deep copy and what if an object have functions in it
 
 
 CSS Question
