@@ -51,28 +51,15 @@ var helloThis = () =>{
 }
 
 var helloThisWitoutFatArrow = function(){
-    console.log("PrintName from FatArrow: " + this.name);
+    console.log("PrintName from Normal Function: " + this.name);
 };
 
 // so even when i call this with some other object it still refers to global object
 // only as it will take Lexical scope
 
 
-// suppose there  is button in html with Id = showName
-var showName  = document.getElementById("showName");
-var showNameWithoutFat  = document.getElementById("showNameWithoutFat");
-
-showName.name = 'Rakesh';
-showNameWithoutFat.name = 'Rakesh';
-
-// this will show name as Sandeep 
-// as function called here is a fat arrow function
-// and fat arrow has lexical this
-showName.addEventListener('click', helloThis);
-
-
-// this will show Rakesh as it will take this from the object on which it is called
-showNameWithoutFat.addEventListener('click', helloThisWitoutFatArrow);
-
+var obj = {name: 'Rakesh'}
+helloThis.call(obj); // this will still print Sandeep as FatArrow has lexical scoping
+helloThisWitoutFatArrow.call(obj); //  this will print Rakesh, as this has changed by obj from call
 
 
