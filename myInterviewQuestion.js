@@ -15,5 +15,3 @@ CSS Question
 Q1. What is FlexBox and difference b/w justify-content and justify-item properties.
 Q2. What are pseudo classes
 Q3. What is difference b/w div and a section
-
-
