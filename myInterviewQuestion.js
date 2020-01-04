@@ -27,6 +27,7 @@ Q7. What is the difference between application cache and browser cache.
 Q8. How to achieve deep copy and what if an object have functions in it.
     // For normal nested object without function,regex extra JSON.stringify
     // else we need to use library like loadash or maybe jquery
+Q9. What is the difference b/w for in for of loop
 
 
 CSS Question
