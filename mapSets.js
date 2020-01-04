@@ -45,3 +45,28 @@ i.e, A key object in WeakMap can be garbage collected if there is no other refer
 3. WeakMap does not have methods such as clear, keys, values, entries, forEach.
 4. WeakMap is not iterable.
 
+
+// SET
+
+A Set is a collection which only holds values. Sounds like an Array? Almost,
+but a Set will only old unique values. That means, no value can appear
+more often than once in a Set.
+You can loop through a set to retrieve the values (or use an Iterator). You
+can also clear() a set or delete individual values by using delete().
+Remember, each value is unique, therefore you don’t need a key or index to
+delete a value!
+
+You can create a Set like this:
+  let cardAce = {
+   name: 'Ace of Spades'
+  };
+  let cardKing = {
+   name: 'King of Clubs'
+  };
+  let deck = new Set();
+  deck.add(cardAce);
+  deck.add(cardKing);
+  deck.add(cardKing); // Won’t be added, only added once!
+
+// Weak set is similar to weak map
+
