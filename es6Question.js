@@ -3,6 +3,8 @@
 // 2. Reduced
 // 3. Filter
 
+// Refernce link for detail info: https://medium.com/poka-techblog/simplify-your-javascript-use-map-reduce-and-filter-bd02c593cc2d
+
 
 // Q1. **************************************** Map  ****************************************
 //     ****************************************      ****************************************
