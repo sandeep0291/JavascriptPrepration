@@ -8,6 +8,8 @@ Q2. What is maps and weakmaps
 Q3. What is Event Propagation and difference between stopPropogation and ImmediateStopPropogation
 Q4. What is a Service Worker
 Q5. What is a Closure.
+Q6. How to hide an object property
+Q7. What is the difference between application cache and browser cache.
 
 
 CSS Question
