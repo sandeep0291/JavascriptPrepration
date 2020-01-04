@@ -63,3 +63,7 @@ helloThis.call(obj); // this will still print Sandeep as FatArrow has lexical sc
 helloThisWitoutFatArrow.call(obj); //  this will print Rakesh, as this has changed by obj from call
 
 
+// NOTE . 
+
+// An arrow function is a shorter syntax for a function expression and does not have its own this, arguments, super, or new.target. 
+// These function are best suited for non-method functions, and they cannot be used as constructors.
