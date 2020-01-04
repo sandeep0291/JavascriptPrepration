@@ -29,7 +29,7 @@ officers.forEach(function (officer) {
 
 
 
-// Q1. **************************************** Reduce  ****************************************
+// Q2. **************************************** Reduce  ****************************************
 //     ****************************************      ****************************************
 
 
@@ -66,6 +66,47 @@ var pilots = [
 var totalYears = pilots.reduce(function (accumulator, pilot) {
   return accumulator + pilot.years;
 }, 0);
+
+
+// Q3. **************************************** Filter  ****************************************
+//     ****************************************      ****************************************
+
+
+// What if you have an array, but only want some of the elements in it? That’s where .filter() comes in!
+// Here’s our data:
+var pilots = [
+  {
+    id: 2,
+    name: "Wedge Antilles",
+    faction: "Rebels",
+  },
+  {
+    id: 8,
+    name: "Ciena Ree",
+    faction: "Empire",
+  },
+  {
+    id: 40,
+    name: "Iden Versio",
+    faction: "Empire",
+  },
+  {
+    id: 66,
+    name: "Thane Kyrell",
+    faction: "Rebels",
+  }
+];
+//Say we want two arrays now: one for rebel pilots, the other one for imperials. With .filter() it couldn’t be easier!
+var rebels = pilots.filter(function (pilot) {
+  return pilot.faction === "Rebels";
+});
+var empire = pilots.filter(function (pilot) {
+  return pilot.faction === "Empire";
+});
+//That’s it! And it’s even shorter with arrow functions:
+const rebels = pilots.filter(pilot => pilot.faction === "Rebels");
+const empire = pilots.filter(pilot => pilot.faction === "Empire");
+
 
 
 
