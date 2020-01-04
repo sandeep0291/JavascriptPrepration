@@ -4,6 +4,8 @@
 JavaScript Question
 
 Q1. What is difference b/w let,const,var and their scope.
+    // Answered
+    // Constants are block-scoped
 Q2. What is maps and weakmaps
     // Refer here https://www.geeksforgeeks.org/map-vs-object-in-javascript/
     // https://github.com/sandeep0291/JavascriptPrepration/blob/master/mapSets.js
@@ -25,6 +27,7 @@ Q4. What is a Service Worker
 Q5. What is a Closure.
     // Answered
 Q6. How to hide an object property
+    // // Partial Answered
 Q7. What is the difference between application cache and browser cache.
     // HTML5 provides application cache, which means that a web application is cached, 
     // and accessible without an internet connection. Application cache gives an application three advantages:
@@ -39,6 +42,7 @@ Q7. What is the difference between application cache and browser cache.
     //
     // Refere here: https://stackoverflow.com/questions/22958006/browser-cache-vs-html5-application-cache
 Q8. How to achieve deep copy and what if an object have functions in it.
+    // Partial Answered
     // For normal nested object without function,regex extra JSON.stringify
     // else we need to use library like loadash or maybe jquery
 Q9. What is the difference b/w for in for of loop
