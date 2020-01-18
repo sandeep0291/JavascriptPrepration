@@ -57,3 +57,42 @@ CSS Question
 Q1. What is FlexBox and difference b/w justify-content and justify-item properties.
 Q2. What are pseudo classes
 Q3. What is difference b/w div and a section
+
+
+
+// ***************************************************************************************//
+                                    XORIANT
+// ***************************************************************************************//
+
+ React Question & JavaScript
+ 1. What is difference between state and props.
+ 2. How do you come to wether setState is async or not?
+ 3. Which lifecylce method will be called first and method calling sequence.
+ 4. What is memonization in react.
+ 5. What is Pure Component and where exactly it is required.
+ 6. Where do you fetch api in class component method.
+ 7. What is stopPropogation.
+ 8. What is preventDefault.
+ 9. What is Router and it's Syntax.
+ 10. How to submit a form.
+ 11. What is switch.
+ 12. What is Hooks.
+ 13. What bootstrap, do we won't need any media queries in bootstrap, does that solves all the problems.
+ 14. How can we make things more responsive.
+ 15. What is getDerivedStateFromProps()
+ 
+ 
+ var x = {
+    a: { 
+        b: { c: 10, d: [1,2,3,4], e: 'Hello' }
+       },
+    f: [ 'World', { g: 10, [10,2,4] } ]
+}
+
+16. Write a function which fill return all primitive values.
+
+ 
+                                    
+                                    
+                                    
+                                    
