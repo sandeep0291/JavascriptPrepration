@@ -91,6 +91,20 @@ Q3. What is difference b/w div and a section
 
 16. Write a function which fill return all primitive values.
 
+Ans: 
+var a = { b: 1, c: { d: 10, e: { f: [2,3,4] } } };
+
+function filterThrough(obj){
+	for( var i in obj ){
+		if( typeof(obj[i]) == 'number' ){ 
+           console.log('Property: '+ obj[i]);
+		}
+        else filterThrough(obj[i]);
+    }
+}
+
+filterThrough(a);
+
  
                                     
                                     
