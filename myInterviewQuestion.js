@@ -105,7 +105,54 @@ function filterThrough(obj){
 
 filterThrough(a);
 
+
+// ***************************************************************************************//
+                                    SAPIENT
+// ***************************************************************************************//
  
+JavaScript:
+
+Q1. What are different ways to create an object;
+Q2. What is the difference b/w  new Object(), Object.create(), Object.assign()
+Q3. What are closures and what is the simplest example of closures.
+Q4. How does closures actually works behind the scene
+Q5. What you have used for async
+Q6. Explain map,filter,reduce,some,every method of es6.
+Q7. What are generators.
+Q8. Difference b/w call by value and call by reference.
+Q9. Whate are Promises.
+Q10. Write a polyfill for filter method of es6.
+Q11. What is the differenc b/w forEach and map method.
+Q12. Does filter/map loops over only array? or loop over only object or both?
+
+
+HTML,CSS,DOM:
+
+Q1. What are semantic tags.
+Q2. What is a css box model.
+Q3. How would you calculate height of css box model.
+Q4. Property name that sets padding and border to 0.
+Q5.  <div class="parent" id="parent" onclick="clicked(event)" >
+	<p id="1" >First </p>
+	<p id="2"> Second</p>
+	<p id="3"> Third</p>
+     </div>
+   
+    Alert id of child and parent whenever clicked on a particular p tag element
+    
+    Answer:
+    function clicked(e){
+    	var id = e.target.id;
+	var parentId = e.target.parentElement.id;
+	alert("Id" + id + "parentId" + parentId );
+    }
+
+
+
+
+
+
+
                                     
                                     
                                     
