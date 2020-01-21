@@ -147,6 +147,11 @@ Q5.  <div class="parent" id="parent" onclick="clicked(event)" >
 	alert("Id" + id + "parentId" + parentId );
     }
 
+ React:
+ 1. What is difference b/w controlled and uncontrolled conmpnents
+ 2. Diff b/w functional and class based components. 
+ 3. After hooks is there any need of class components now
+ 3. What are Higher order component, explain the scenario where you need to use it.
 
 
 
