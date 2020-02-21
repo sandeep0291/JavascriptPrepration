@@ -131,7 +131,7 @@ HTML,CSS,DOM:
 Q1. What are semantic tags.
 Q2. What is a css box model.
 Q3. How would you calculate height of css box model.
-Q4. Property name that sets padding and border to 0.
+Q4. Property name that sets padding and border to 0.	// display: inline
 Q5.  <div class="parent" id="parent" onclick="clicked(event)" >
 	<p id="1" >First </p>
 	<p id="2"> Second</p>
