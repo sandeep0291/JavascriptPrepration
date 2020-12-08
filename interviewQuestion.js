@@ -142,13 +142,8 @@ else
 // Q3. Flatten a nested array
 // Flatten An an nested array 
 var  arr = [ [1,2,3,[4,5]] , [6,7], [8,9,[ 10, 11, [12,13] ]] ];
-
-
 function flattenArray(arr){
-   
-    //var i;
     for( var i=0; i <arr.length; i++){
-
         if( Array.isArray(arr[i]) ) {
              var newArr = [].concat.apply([], arr[i]);
              arr.splice(i,1);
@@ -156,12 +151,9 @@ function flattenArray(arr){
              i=-1;
              console.log(arr);
         }
-
     }
     return arr;
 }
-
-
 flattenArray(arr)
 
 
@@ -183,8 +175,16 @@ function flatArray(arr){
   
   return flattenArray;
 }
-
 flatArray([1,2,[3,4,[5,6]]]);
+
+// another way
+const arr = [1, 2, [3, 4, [5, 6]]];
+// to enable deep level flatten use recursion with reduce and concat
+function flatDeep(arr, d = 1) {
+   return d > 0 ? arr.reduce((acc, val) => acc.concat(Array.isArray(val) ? flatDeep(val, d - 1) : val), [])
+                : arr.slice();
+};
+flatDeep(arr, Infinity);
 
 
 
