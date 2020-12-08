@@ -165,6 +165,29 @@ function flattenArray(arr){
 flattenArray(arr)
 
 
+// another way
+function flatArray(arr){
+  let flattenArray = [];
+
+  let flatIt = function(arr) {
+      for(let i=0; i<arr.length; i++){
+          if(Array.isArray(arr[i])){
+              flatIt(arr[i]);
+           } else {
+             flattenArray.push(arr[i]);
+           }
+        }
+  }
+
+   flatIt(arr);
+  
+  return flattenArray;
+}
+
+flatArray([1,2,[3,4,[5,6]]]);
+
+
+
 // ***********  Q4. Inheritance in javascript *******************  @Sandeep Kumar
 function Animal (name, energy) {
   this.name = name
