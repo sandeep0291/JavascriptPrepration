@@ -385,3 +385,23 @@ mergeSort(array);
 
 // Logical coding question Reference https://gist.github.com/lalkmim/e04845eb9d1c5936622a
 
+
+
+// Problem with var keyword, with using aysnc methods
+
+(function timer() {
+  for (var i=0; i<=5; i++) {
+    setTimeout(function clog() {console.log(i)}, i*1000);
+  }
+})();
+
+// fix either with let keyword instead of var
+// normal fix
+(function timer() {
+  for (var i=0; i<=5; i++) {
+    (function(j){
+        setTimeout(function clog() {console.log(j)}, i*1000);
+    })(i)
+  }
+})();
+
