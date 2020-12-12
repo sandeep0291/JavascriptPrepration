@@ -20,7 +20,7 @@
 
 
 // Core Fundamental Question:
-// 1. What is Hoisting.
+// 1. What is Hoisting - https://dev.to/lydiahallie/javascript-visualized-hoisting-478h
 // 2. What is a Closure.
 // 3. Prototype Chaining
 // 4. What is Lexical Scope
