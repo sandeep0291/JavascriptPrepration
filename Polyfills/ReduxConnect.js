@@ -1,3 +1,6 @@
+
+https://blog.jakoblind.no/learn-react-redux-by-coding-the-connect-function-yourself/
+
 function ReduxConnect(mapStateToProps, mapDispatchToProps){
     return function(WrappedCompnent){
         return class extends React.component {
